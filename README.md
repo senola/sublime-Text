@@ -57,7 +57,7 @@ Preference -> Key Bindings-Users
     ] 
 
 相关安装插件：
-SideBarEnhancements、JsFormate,ConvertToUTF8
+SideBarEnhancements、JsFormate,ConvertToUTF8，Zen Coding，jQuery 
 
 参考资料：
 
