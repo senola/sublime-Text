@@ -27,24 +27,34 @@ Install & Configure
 
 其他设置：
 
+#### 1. 界面样式
 Preferences -> Settings-User
 
 	 {
-		"bold_folder_labels": true,
-		"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-		"create_window_at_startup": false,
-		"font_face": "Consolas bold",
+		"bold_folder_labels": true, //左侧文件夹字体加粗
+		"create_window_at_startup": false, //启动ST时 不自动创建空文件
+		"font_face": "Consolas bold", // 字体设置 加粗
 		"font_size": 12,
-		"highlight_line": true,
-		"highlight_modified_tabs": true,
-		"ignored_packages":
-		[
-			"Vintage"
-		],
-		"save_on_focus_lost": true
+		"highlight_line": true, //光标所处的整行高亮显示
+		"highlight_modified_tabs": true, // 修改过未保存的文件标签高亮显示
+		"save_on_focus_lost": true //文件焦点，即切换到另一个文件时自动保存上一个文件内容
 	}
  
 
+#### 2.热键修改
+
+Preference -> Key Bindings-Users
+
+    [
+	     // ctrl + D 默认删除一行
+	     { "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+	     // 整行下移
+	     { "keys": ["alt+up"], "command": "swap_line_up" },
+	     // 整行上移
+	     { "keys": ["alt+down"], "command": "swap_line_down" },
+	     // 复制光标整行，并插入在该行之前
+	     { "keys": ["ctrl+alt+down"], "command": "duplicate_line" }
+    ] 
 
 
 
