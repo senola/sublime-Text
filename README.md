@@ -1,6 +1,5 @@
 Enhance the sublime text 2 sidebar with icons for folders
 ===========================================================
-参考：http://blog.csdn.net/a497393102/article/details/10563791
 
 
 This package add icons to folders in the sidebar by overloading package Theme - Default/Default.sublime-theme
@@ -37,7 +36,8 @@ Preferences -> Settings-User
 		"font_size": 12,
 		"highlight_line": true, //光标所处的整行高亮显示
 		"highlight_modified_tabs": true, // 修改过未保存的文件标签高亮显示
-		"save_on_focus_lost": true //文件焦点，即切换到另一个文件时自动保存上一个文件内容
+		"save_on_focus_lost": true, //文件焦点，即切换到另一个文件时自动保存上一个文件内容
+        "update_check":false //禁止自动更新
 	}
  
 
@@ -56,5 +56,12 @@ Preference -> Key Bindings-Users
 	     { "keys": ["ctrl+alt+down"], "command": "duplicate_line" }
     ] 
 
+相关安装插件：
+SideBarEnhancements、JsFormate,ConvertToUTF8
+
+参考资料：
+
+	http://blog.csdn.net/a497393102/article/details/10563791    
+	http://blog.csdn.net/zm2714/article/details/7989384
 
 
