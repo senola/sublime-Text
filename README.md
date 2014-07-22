@@ -53,7 +53,9 @@ Preference -> Key Bindings-Users
 	     // 整行上移
 	     { "keys": ["alt+down"], "command": "swap_line_down" },
 	     // 复制光标整行，并插入在该行之前
-	     { "keys": ["ctrl+alt+down"], "command": "duplicate_line" }
+	     { "keys": ["ctrl+alt+down"], "command": "duplicate_line" }，
+         // ctrl + L  切换到某一行
+         { "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} }
     ] 
 
 相关安装插件：
