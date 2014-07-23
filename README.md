@@ -1,4 +1,4 @@
-Enhance the sublime text 2 sidebar with icons for folders
+侧边栏添加文件夹
 ===========================================================
 
 
@@ -14,7 +14,7 @@ Icons from Soda Theme > http://buymeasoda.github.com/soda-theme/
 Screnshot: Sublime Text 2 build 2217 - Win7
 
 
-Install & Configure
+配置方法
 -----------------------------------------------------------
 - Download the zip.
 - Close Sublime Text 2
