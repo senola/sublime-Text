@@ -56,6 +56,15 @@ Preference -> Key Bindings-Users
 	     { "keys": ["ctrl+alt+down"], "command": "duplicate_line" },
          // ctrl + L  切换到某一行
          { "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} }
+         // ctrl + / 自动提示
+	 { "keys": ["alt+/"], "command": "auto_complete" },
+	 { "keys": ["alt+/"], "command": "replace_completion_with_auto_complete", "context":
+		[
+			{ "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
+			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
+		]
+	 }
     ] 
 
 相关安装插件：
